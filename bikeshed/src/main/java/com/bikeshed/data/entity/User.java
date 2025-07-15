@@ -1,4 +1,4 @@
-package com.bikeshed.bikeshed.data.entity;
+package com.bikeshed.data.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

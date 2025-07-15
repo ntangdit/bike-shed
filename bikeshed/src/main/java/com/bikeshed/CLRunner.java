@@ -1,12 +1,12 @@
-package com.bikeshed.bikeshed;
+package com.bikeshed;
 
 import java.util.Optional;
 
-import org.springframework.stereotype.Component;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.stereotype.Component;
 
-import com.bikeshed.bikeshed.data.entity.User;
-import com.bikeshed.bikeshed.data.repository.UserRepository;
+import com.bikeshed.data.entity.User;
+import com.bikeshed.data.repository.UserRepository;
 
 @Component
 public class CLRunner implements CommandLineRunner {
