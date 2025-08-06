@@ -25,5 +25,4 @@ public class User {
 
   @Column(name="age")
   private int age;
-
 }

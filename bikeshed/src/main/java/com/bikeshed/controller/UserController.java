@@ -1,4 +1,4 @@
-package com.bikeshed;
+package com.bikeshed.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,11 +10,11 @@ import com.bikeshed.data.repository.UserRepository;
 
 @RestController
 @RequestMapping("/user")
-public class Controller {
+public class UserController {
 
   private final UserRepository userRepository;
 
-  public Controller(UserRepository userRepository) {
+  public UserController(UserRepository userRepository) {
     this.userRepository = userRepository;
   }
 
