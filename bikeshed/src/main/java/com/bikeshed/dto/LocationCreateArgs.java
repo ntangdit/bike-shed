@@ -7,7 +7,5 @@ public class LocationCreateArgs {
 
     private String name;
 
-    private double x;
-
-    private double y;
+    private double[] latLon;
 }

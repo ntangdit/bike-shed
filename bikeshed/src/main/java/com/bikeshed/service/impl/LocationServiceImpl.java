@@ -20,7 +20,8 @@ public class LocationServiceImpl implements LocationService {
 
     public void addLocation(LocationCreateArgs locationCreateArgs) {
         Location location = new Location();
-        Point point = geometryFactory.createPoint(new Coordinate(locationCreateArgs.getX(), locationCreateArgs.getY()));
+        double[] latLon = locationCreateArgs.getLatLon();
+        Point point = geometryFactory.createPoint(new Coordinate(latLon[1], latLon[0]));
         location.setGeom(point);
         location.setName(locationCreateArgs.getName());
         locationRepository.save(location);

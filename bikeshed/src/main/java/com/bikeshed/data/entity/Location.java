@@ -15,7 +15,7 @@ public class Location {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
-    @Column(columnDefinition = "geometry(Point,26918)")
+    @Column(columnDefinition = "geometry(Point,4326)")
     private Point geom;
 
     @Column(name = "name")
